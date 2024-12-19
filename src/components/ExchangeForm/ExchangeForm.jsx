@@ -46,7 +46,7 @@ const ExchangeForm = () => {
               justifyContent: isMobile ? "space-around" : "flex-start",
             },
           }}
-        >
+        >git remote add origin https://github.com/Wizqqr/CryptoBTN.git
           <Tab label="Все" sx={{ fontWeight: "bold" }} />
           <Tab label="Банки" sx={{ fontWeight: "bold" }} />
           <Tab label="Криптовалюта" sx={{ fontWeight: "bold" }} />

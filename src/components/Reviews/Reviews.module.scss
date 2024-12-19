@@ -1,0 +1,51 @@
+.reviews{
+    background-color: #f4f5fa;
+}
+.review-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .review-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .review-avatar {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+  
+  .review-name {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .review-date {
+    color: #999;
+    font-size: 0.875rem;
+    margin-bottom: 15px;
+  }
+  
+  .review-comment {
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  // Ensure that reviews are responsive
+  @media (max-width: 768px) {
+    .review-card {
+      max-width: 100%;
+    }
+  }
+  
