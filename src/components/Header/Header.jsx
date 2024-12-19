@@ -51,7 +51,6 @@ export const Header = () => {
           >
             <img src="https://crypto-port.ru/img/logo.svg"></img>
             </Typography>
-          {/* Иконка меню, скрыта на md и выше */}
           <IconButton
             edge="start"
             color="inherit"
@@ -61,7 +60,6 @@ export const Header = () => {
           >
             {mobileOpen ? <CloseIcon style={{ color: "#333" }} /> : <MenuIcon style={{ color: "#333" }} />}
           </IconButton>
-          {/* Навигация для десктопной версии */}
           <Box sx={{ display: { xs: "none", md: "flex" }, gap: "1.5rem" }}>
            <Link className={styles.link} to="/rules"><h2 className={styles.navButton}>Rules</h2></Link> 
             <h2 className={styles.navButton}>About</h2>
@@ -73,7 +71,6 @@ export const Header = () => {
           </Box>
         </Toolbar>
       </AppBar>
-      {/* Мобильное меню */}
       <Drawer
         anchor="left"
         open={mobileOpen}

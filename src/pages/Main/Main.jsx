@@ -16,25 +16,23 @@ export const Main = () => {
           borderRadius: 2,
         }}
       >
-        {/* Container for text and icons with max-width */}
         <Box
           sx={{
-            maxWidth: "1200px",  // Apply max-width here
-            mx: "auto",  // Center the container horizontally
-            position: "relative", // Ensure the icons remain positioned correctly
+            maxWidth: "1200px",  
+            mx: "auto",  
+            position: "relative", 
           }}
         >
-          {/* Левая иконка */}
           <Box
             sx={{
               position: "absolute",
               top: 20,
               left: 40,
-              width: 100,  // Increased width
-              height: 100,  // Increased height
+              width: 100,
+              height: 100,
               backgroundColor: "#26A17B",
               borderRadius: "50%",
-              display: { xs: "none", sm: "flex" },  // Hide on small screens (xs), show on medium and up (sm)
+              display: { xs: "none", sm: "flex" }, 
               alignItems: "center",
               justifyContent: "center",
               boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
@@ -44,24 +42,23 @@ export const Main = () => {
               sx={{
                 color: "white",
                 fontWeight: "bold",
-                fontSize: 36,  // Adjusted font size
+                fontSize: 36, 
               }}
             >
               T
             </Typography>
           </Box>
 
-          {/* Правая иконка */}
           <Box
             sx={{
               position: "absolute",
               top: 20,
               right: 40,
-              width: 100,  // Increased width
-              height: 100,  // Increased height
+              width: 100, 
+              height: 100,  
               backgroundColor: "#F7931A",
               borderRadius: "50%",
-              display: { xs: "none", sm: "flex" },  // Hide on small screens (xs), show on medium and up (sm)
+              display: { xs: "none", sm: "flex" },
               alignItems: "center",
               justifyContent: "center",
               boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
@@ -71,14 +68,13 @@ export const Main = () => {
               sx={{
                 color: "white",
                 fontWeight: "bold",
-                fontSize: 36,  // Adjusted font size
+                fontSize: 36, 
               }}
             >
               ₿
             </Typography>
           </Box>
 
-          {/* Основной текст */}
           <Typography
             variant="h3"
             component="h1"

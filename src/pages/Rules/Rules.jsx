@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Typography, Paper, Avatar, List, ListItem, ListItemText, useMediaQuery } from "@mui/material";
 
-// Example reviews data
 const reviews = [
   {
     id: 1,
@@ -48,12 +47,10 @@ const reviews = [
 ];
 
 export const Rules = () => {
-  // Check if the screen size is small (mobile)
   const isMobile = useMediaQuery("(max-width:600px)");
 
   return (
     <Box display="flex" flexDirection={isMobile ? "column" : "row"} justifyContent="space-between" p={4} sx={{ maxWidth: '1200px', margin: '0 auto' }}>
-      {/* Left Section - Service Rules */}
       <Box flex={1} p={4} sx={{ borderRight: !isMobile ? 1 : 0, borderColor: 'grey.300', backgroundColor: '#f4f6f8', borderRadius: 2 }}>
         <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold' }}>
           Service Rules
@@ -80,7 +77,6 @@ export const Rules = () => {
         </Typography>
       </Box>
 
-      {/* Right Section - Reviews (only visible on desktop) */}
       {!isMobile && (
         <Box flex={1} p={4} sx={{ backgroundColor: '#f9fafb', borderRadius: 2 }}>
           <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>

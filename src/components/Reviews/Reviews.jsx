@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Grid, Avatar } from "@mui/material";
 import { format } from "date-fns";
-import styles from './Reviews.module.scss'; // Assuming you're using SCSS for additional styling
+import styles from './Reviews.module.scss'; 
 
 export const Reviews = () => {
   const reviews = [

@@ -8,7 +8,7 @@ export const Auth = () => {
     const [repeatPassword, setRepeatPassword] = useState("");
     const [email, setEmail] = useState("");
     const [login, setLogin] = useState("");
-    const [isRegistering, setIsRegistering] = useState(false); // To toggle between Auth and Register
+    const [isRegistering, setIsRegistering] = useState(false)
 
     const handleClickShowPassword = () => setShowPassword(!showPassword);
     const toggleForm = () => setIsRegistering(!isRegistering);
@@ -16,7 +16,6 @@ export const Auth = () => {
     return (
         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '70vh', backgroundColor: '#f5f5f5' }}>
             <Grid container spacing={2} sx={{ width: 450, padding: 3, backgroundColor: 'white', borderRadius: 2, boxShadow: 3 }}>
-                {/* Toggle Button - Larger and Stylish */}
                 <Grid item xs={12} sx={{ textAlign: 'center', marginBottom: 3 }}>
                     <Box
                         sx={{
@@ -62,7 +61,6 @@ export const Auth = () => {
                     </Box>
                 </Grid>
 
-                {/* Form */}
                 <Grid item xs={12} sx={{ textAlign: 'center' }}>
                     <Typography variant="h4" gutterBottom>
                         {isRegistering ? 'Registration' : 'Authorization'}
