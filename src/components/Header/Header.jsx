@@ -24,7 +24,7 @@ export const Header = () => {
       onKeyDown={handleDrawerToggle}
     >
      <List>
-     {['Home', 'About', 'Services', 'Reviews', 'Contact'].map((text) => (
+     {['Главное', 'О клубе', 'Галерея'].map((text) => (
       <ListItem button key={text}>
         <ListItemText primary={text} className={styles.navButton} />
       </ListItem>
@@ -49,8 +49,20 @@ export const Header = () => {
             component="div"
             sx={{ flexGrow: 1, fontWeight: "bold", color: "#333", marginRight: "1.5rem" }}
           >
-            <img src="https://crypto-port.ru/img/logo.svg"></img>
-            </Typography>
+      <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhsccDK3NYUmWlUn5-m9C-hCUiW7riru71QA&s"
+            alt="Logo"
+            style={{
+              height: '75px',
+              width: '75px',
+              maxWidth: '100%',
+              borderRadius: '50%',
+              transition: 'transform 0.3s ease',
+            }}
+            className="logo"
+            onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.1)')}
+            onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+          />           </Typography>
           <IconButton
             edge="start"
             color="inherit"
@@ -61,11 +73,9 @@ export const Header = () => {
             {mobileOpen ? <CloseIcon style={{ color: "#333" }} /> : <MenuIcon style={{ color: "#333" }} />}
           </IconButton>
           <Box sx={{ display: { xs: "none", md: "flex" }, gap: "1.5rem" }}>
-           <Link className={styles.link} to="/rules"><h2 className={styles.navButton}>Rules</h2></Link> 
-            <h2 className={styles.navButton}>About</h2>
-            <h2 className={styles.navButton}>Services</h2>
-            <h2 className={styles.navButton}>Reviews</h2>
-            <h2 className={styles.navButton}>Contact</h2>
+            <Link className={styles.link} to="/"><h2 className={styles.navButton}>Главное</h2></Link>
+           <Link className={styles.link} to="/clubinfo"><h2 className={styles.navButton}>О клубе</h2></Link> 
+            <Link className={styles.link} to="/gallery"><h2 className={styles.navButton}>Галерея</h2></Link>
            <Link className={styles.link} to="/auth"> <button className={`${styles.authButton} ${styles.signIn}`}>Sign In</button></Link>
            <Link className={styles.link} to="/auth"><button className={`${styles.authButton} ${styles.signUp}`}>Sign Up</button></Link> 
           </Box>
