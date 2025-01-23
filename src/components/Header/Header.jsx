@@ -76,6 +76,8 @@ export const Header = () => {
             <Link className={styles.link} to="/"><h2 className={styles.navButton}>Главное</h2></Link>
            <Link className={styles.link} to="/clubinfo"><h2 className={styles.navButton}>О клубе</h2></Link> 
             <Link className={styles.link} to="/gallery"><h2 className={styles.navButton}>Галерея</h2></Link>
+            <Link className={styles.link} to="/faq"><h2 className={styles.navButton}>FAQ</h2></Link>
+            <Link className={styles.link} to="/contacts"><h2 className={styles.navButton}>Контакты</h2></Link>
            <Link className={styles.link} to="/auth"> <button className={`${styles.authButton} ${styles.signIn}`}>Sign In</button></Link>
            <Link className={styles.link} to="/auth"><button className={`${styles.authButton} ${styles.signUp}`}>Sign Up</button></Link> 
           </Box>
